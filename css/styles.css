@@ -1,0 +1,8 @@
+.hidden {
+    display: none;
+}
+.people-form {
+    display: block;
+    height: 100%;
+    overflow: scroll;
+}

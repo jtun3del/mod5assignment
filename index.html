@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event and DOM Practice: Tab Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+
+
+</head>
+
+<body>
+<main>
+    <aside>
+        <nav>
+            <!--Generated via JavaScript-->
+        </nav>
+    </aside>
+    <div class="content">
+        <article>
+            <header>
+                <h1>Company Management Tool</h1>
+            </header>
+            <section>
+                <h3>Complete the Form</h3>
+                <p>
+                    This application should only show one form at a time based on what the user has chosen in the select element.
+                </p>
+                <p>Go to the conditional-ui.js file and complete "Part One," "Part Two," "Part Three," and "Part Four"</p>
+            </section>
+
+            <section>
+                <div class="row people">
+                    <div class="flex-3 people-add">
+                        <h3>Add people</h3>
+                        <div class="people-select">
+                            <label for="people-choice">Choose a person type</label>
+                            <select id="people-choice">
+                                <option disabled selected>Select a type</option>
+                                <option value="employee">Employee</option>
+                                <option value="supplier">Supplier</option>
+                                <option value="customer">Customer</option>
+                            </select>
+                        </div>
+                        <div class="people-form">
+                            <form id="employee-form" class="">
+                                <h4>Employee Form</h4>
+                                <label for="employee-id">Employee ID</label>
+                                <input type="number" id="employee-id">
+                                <label for="employee-fname">First Name</label>
+                                <input type="text" id="employee-fname">
+                                <label for="employee-lname">Last Name</label>
+                                <input type="text" id="employee-lname">
+                                <label for="employee-email">Employee Email</label>
+                                <input type="text" id="employee-email">
+                                <label for="employee-department">Department</label>
+                                <select name="departments" id="employee-department">
+                                    <option value="Sales">Sales</option>
+                                    <option value="HR">Sales</option>
+                                    <option value="Manufacturing">Sales</option>
+                                </select>
+                                <label for="employee-hiredate">Employee Hire Date</label>
+                                <input type="date" id="employee-hiredate">
+                                <label for="employee-termination">Employee Termination Date</label>
+                                <input type="date" id="employee-termination">
+                                <input type="submit" value="Add Employee">
+                            </form>
+                            <form id="supplier-form" class="">
+                                <h4>supplier Form</h4>
+                                <label for="supplier-id">ID</label>
+                                <input type="number" id="supplier-id">
+                                <label for="supplier-name">Supplier Name</label>
+                                <input type="text" id="supplier-name">
+                                <label for="supplier-zipcode">Zipcode</label>
+                                <input type="number" id="supplier-zipcode">
+                                <label for="supplier-fname">First Name</label>
+                                <input type="text" id="supplier-fname">
+                                <label for="supplier-lname">Last Name</label>
+                                <input type="text" id="supplier-lname">
+                                <label for="supplier-email">Email</label>
+                                <input type="email" id="supplier-email">
+                                <label for="supplier-lastdeliverydate">Last Delivery Date</label>
+                                <input type="date" id="supplier-lastdeliverydate">
+                                <label for="supplier-isactive">Is active</label>
+                                <input type="checkbox" id="supplier-isactive">
+                                <input type="submit" value="Add supplier">
+                            </form>
+                            <form id="customer-form" class="">
+                                <h4>customer Form</h4>
+                                <label for="customer-id">ID</label>
+                                <input type="number" id="customer-id">
+                                <label for="customer-fname">First Name</label>
+                                <input type="text" id="customer-fname">
+                                <label for="customer-lname">Last Name</label>
+                                <input type="text" id="customer-lname">
+                                <label for="customer-email">Email</label>
+                                <input type="email" id="customer-email">
+                                <label for="customer-phonenumber">Phone Number</label>
+                                <input type="tel" id="customer-phonenumber">
+                                <label for="customer-mailinglistopt">Opted into mailing list</label>
+                                <input type="checkbox" id="customer-mailinglistopt">
+                                <label for="customer-lastpurchase">Last Purchase Date</label>
+                                <input type="date" id="customer-lastpurchase">
+                                <input type="submit" value="Add customer">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="flex-2 people-list">
+                        <h3>people Inventory</h3>
+                        <h4>employees</h4>
+                        <div class="employees-list">
+
+                        </div>
+                        <h4>suppliers</h4>
+                        <div class="suppliers-list">
+
+                        </div>
+                        <h4>customers</h4>
+                        <div class="customers-list">
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+
+            </section>
+        </article>
+    </div>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/Employee.js"></script>
+<script src="js/Supplier.js"></script>
+<script src="js/Customer.js"></script>
+<script src="js/lists.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
