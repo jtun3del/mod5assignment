@@ -39,7 +39,28 @@ $(function() {
 
     })
     $("#people-display-choice").on("change", function(e) {
-        (e.target.value)
+        let target = e.target.value
+        switch(target) {
+            case "employee":
+                target = ".employees-list";
+                break;
+            case "supplier":
+                target = ".suppliers-list";
+                break;
+            case "customer":
+                target = ".customers-list";
+                break;
+        }
+        console.log(target)
+        if (e.target.value === "all") {
+            $(".people-list>div").removeClass("hidden");
+        }
+        else {
+            $(".people-list>div").addClass("hidden");
+            $(target).removeClass("hidden");
+        }
+
+
 
     })
     document.getElementById('employee-form').addEventListener('submit', function(e){
