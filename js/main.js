@@ -19,7 +19,7 @@ $(function() {
     customers.forEach(function(emp) {
         $(".customers-list").append(emp.createElement());
     })
-    $(".employees-list, .suppliers-list, .customers-list").addClass("hidden");
+    $(".people-list>div").addClass("hidden");
 
     $("#people-choice").on("change", function(e) {
         let selectedForm = e.target.value;
@@ -36,6 +36,10 @@ $(function() {
                 break;
         }
         $(selectedForm)[0].classList.remove("hidden");
+
+    })
+    $("#people-display-choice").on("change", function(e) {
+        (e.target.value)
 
     })
     document.getElementById('employee-form').addEventListener('submit', function(e){
