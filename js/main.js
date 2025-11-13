@@ -10,9 +10,16 @@ $(function() {
     $("#customer-form")[0].classList.add("hidden"); */
     $(".people-form>form").addClass("hidden");
 
-    employees.forEach(function(car) {
-        $(".employees-list").append(car.createElement());
+    employees.forEach(function(emp) {
+        $(".employees-list").append(emp.createElement());
     })
+    suppliers.forEach(function(emp) {
+        $(".suppliers-list").append(emp.createElement());
+    })
+    customers.forEach(function(emp) {
+        $(".customers-list").append(emp.createElement());
+    })
+    $(".employees-list, .suppliers-list, .customers-list").addClass("hidden");
 
     $("#people-choice").on("change", function(e) {
         let selectedForm = e.target.value;
