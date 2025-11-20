@@ -27,13 +27,7 @@
             <header>
                 <h1>Company Management Tool</h1>
             </header>
-            <section>
-                <h3>Complete the Form</h3>
-                <p>
-                    This application should only show one form at a time based on what the user has chosen in the select element.
-                </p>
-                <p>Go to the conditional-ui.js file and complete "Part One," "Part Two," "Part Three," and "Part Four"</p>
-            </section>
+
 
             <section>
                 <div class="row people">
@@ -43,9 +37,9 @@
                             <label for="people-choice">Choose a person type</label>
                             <select id="people-choice">
                                 <option disabled selected>Select a type</option>
-                                <option value="employee">Employee</option>
-                                <option value="supplier">Supplier</option>
-                                <option value="customer">Customer</option>
+                                <option value="#employee-form">Employee</option>
+                                <option value="#supplier-form">Supplier</option>
+                                <option value="#customer-form">Customer</option>
                             </select>
                         </div>
                         <div class="people-form">
@@ -119,19 +113,24 @@
                         <option value="customer">Customer</option>
                         <option value="all">All</option>
                     </select>
+                    <h3>People Inventory</h3>
                     <div class="flex-2 people-list">
-                        <h3>people Inventory</h3>
-                        <h4>employees</h4>
+
+                        <div> <h4>employees:</h4>
                         <div class="employees-list">
+                        </div>
 
                         </div>
-                        <h4>suppliers</h4>
+                        <div>
+                        <h4>suppliers:</h4>
                         <div class="suppliers-list">
+                        </div>
 
                         </div>
-                        <h4>customers</h4>
+                        <div>
+                        <h4>customers:</h4>
                         <div class="customers-list">
-
+                        </div>
                         </div>
                     </div>
                 </div>

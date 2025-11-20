@@ -1,0 +1,1 @@
+refactored the people form function to one line

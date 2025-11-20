@@ -22,21 +22,7 @@ $(function() {
     $(".people-list>div").addClass("hidden");
 
     $("#people-choice").on("change", function(e) {
-        let selectedForm = e.target.value;
-        $(".people-form>form").addClass("hidden");
-        switch(selectedForm) {
-            case "employee":
-                selectedForm = "#employee-form";
-                break;
-            case "supplier":
-                selectedForm = "#supplier-form";
-                break;
-            case "customer":
-                selectedForm = "#customer-form";
-                break;
-        }
-        $(selectedForm)[0].classList.remove("hidden");
-
+        $(this.value).removeClass("hidden").siblings().addClass("hidden")
     })
     $("#people-display-choice").on("change", function(e) {
         let target = e.target.value
@@ -57,7 +43,7 @@ $(function() {
         }
         else {
             $(".people-list>div").addClass("hidden");
-            $(target).removeClass("hidden");
+            $(target).parent().removeClass("hidden");
         }
 
 
