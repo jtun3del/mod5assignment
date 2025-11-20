@@ -17,8 +17,11 @@ $(function() {
         $(".suppliers-list").append(emp.createElement());
     })
     customers.forEach(function(emp) {
-        $(".customers-list").append(emp.createElement());
-    })
+        peopleDivCreator($(".customers-list"), emp)
+    });
+    function peopleDivCreator(div, emp) {
+        div.append(emp.createElement());
+    }
     $(".people-list>div").addClass("hidden");
 
     $("#people-choice").on("change", function(e) {
